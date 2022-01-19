@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            border-color: red;
+        }
+        .colorRed{
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://127.0.0.1:5501/ES6/DOM/email/main.html" method="get" onsubmit=" return submitForm()">
+        <label for="myEmail"></label>
+        <input type="email" name="email" required id="myEmail">
+        <p class="colorRed" id="warning">Nhap sai email roi</p>
+        <button type="submit">Submit</button>
+    </form>
+    <script src="./isEmail.js"></script>
+    <script>
+        let resultInput = "";
+        let check = false;
+        let myInput = document.querySelector("#myEmail");
+        myInput.onchange = () =>{
+            resultInput = myInput.value;
+            if(!isEmail(resultInput)){
+                myInput.classList.add("red");
+                document.querySelector("#warning").style.display = "block";
+            }
+            check = true;
+        }
+        myInput.addEventListener("focus", () => {
+            document.querySelector("#warning").style.display = "none";
+            if(myInput.hasAttribute("class")){
+                myInput.classList.remove("red");
+            }
+        })
+
+        myInput.addEventListener("blur", ()=> {
+            resultInput = myInput.value;
+            if(!isEmail(resultInput)){
+                myInput.classList.add("red");
+                document.querySelector("#warning").style.display = "block";
+            }
+            check = true;
+            // console.log(true);
+        })
+        
+        submitForm = () => {
+            if(check) {
+                console.log(" ban nhap lai di");
+            }
+            return check;
+        }
+    </script>
+</body>
+</html>
