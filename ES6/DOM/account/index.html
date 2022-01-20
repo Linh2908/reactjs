@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="account">Tai Khoan</label>
+        <input type="text" name="account" id="myAccount" required >
+    </form>
+
+    <script src="./isAccount.js"></script>
+    <script >
+        // kiem tra tai khoan 
+        document.querySelector("input").addEventListener("change", () => {
+            let inputValue=  document.querySelector("input").value;
+            if(isAccount(inputValue)){
+                alert("tai khoan cua ban dunng roi nha");
+            }else{
+                alert("Tai khoan cua ban co van de nha");
+            }
+        })
+    </script>
+</body>
+</html>

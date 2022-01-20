@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 2: Nối 2 mảng dữ liệu thành mảng mới. -->
+    <script>
+        // vi du 1
+        const ARR1 = [1, 2, 5, 7];
+        const ARR2 = ["tuan Anh day nha", "ok nha"];
+        const ARR3 = [...ARR1, ...ARR2]
+        console.log(ARR3);
+
+        // vi du 2
+        const billing = { billingContact: '0987654321', billingAddress: 'street no 123, xyz city' };
+        const shipping = { shippingContact: '123456789', shippingAddress: 'street no 999, abc city' };
+        const custInfo = { ...billing, ...shipping };
+        console.log(custInfo);
+    </script>
+</body>
+
+</html>
