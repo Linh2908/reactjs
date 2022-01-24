@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #000;
+    height: 100vh;
+    color:white;
+    text-align: center;
+    padding: 20px 0;
+}
+.title{
+    font-size: 40px;
+    margin: 20px 0;
+    text-shadow: 2px 4px 4px #ccc;
+}
+.search, .btnSearch,.removeAll{
+    font-size: 15px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.btnSearch{
+    background-color: rgb(61, 206, 85);
+    color:white;
+    cursor: pointer;
+}
+
+.removeAll{
+    background-color: rgb(223, 31, 31);
+    color:white;
+    cursor: pointer;
+}
