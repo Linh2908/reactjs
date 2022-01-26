@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card{
+  width: 40%;
+  margin: 40px auto;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card-header{
+  height: 220px;
+  background: url("./background.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card-body{
+  text-align: center;
+  padding-top: 100px;
+  font-family: fangsong;
+}
+.card-title{
+  font-size: 40px;
+  font-weight: bold;
+}
+.btn{
+  width: 100%;
+}
+
+.avater{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url('https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/257373350_3151048941887854_5411678964248106936_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=RaLFtQtMt3kAX93klzX&_nc_ht=scontent.fhan5-6.fna&oh=00_AT_Ey9KjlXA0nH222Jfsz0dh8JJRkjmNNnXKqMIR9pcgeg&oe=61F69F8B') no-repeat center;
+  background-size: cover;
+  left: 37%;
+  border-radius: 50%;
+  top: 30%;
+  z-index: 1;
+}
