@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const App = () => {
+const App = (props) => {
 
   
   return (
@@ -21,9 +21,9 @@ const App = () => {
           <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
-        
-      </form>
 
+      </form>
+      
     </div>
   );
 }

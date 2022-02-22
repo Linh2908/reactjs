@@ -1,0 +1,9 @@
+{
+   "data" : [
+       {"Id" : 1, "Name" : "A", "Age" : 20, "Address" : "Ha Noi"},
+       {"Id" : 2, "Name" : "B", "Age" : 22, "Address" : "Ha Noi"},
+       {"Id" : 3, "Name" : "C", "Age" : 21, "Address" : "Ha Noi"},
+       {"Id" : 4, "Name" : "D", "Age" : 26, "Address" : "Ha Noi"},
+       {"Id" : 5, "Name" : "E", "Age" : 20, "Address" : "Ha Noi"}
+   ]
+}

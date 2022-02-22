@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(width, height) {
+                this.width = width;
+                this.height = height;
+            }
+
+            calculatorArea() {
+                return this.width * this.height;
+            }
+
+            calculatorParimeter() {
+                return 2*(this.width + this.height);
+            }
+
+            drawRactangle() {
+                document.body.innerHTML = `<canvas width="500" height="500" style="border: 1px solid #000;" id="myCanvas"></canvas>`;
+                let ctx = document.querySelector("#myCanvas").getContext('2d');
+                ctx.fillStyle ="#ccc";
+                ctx.fillRect(0,0,this.width, this.height);
+                
+            }
+        }
+
+        const hcn1 = new Rectangle(400,200);
+        hcn1.drawRactangle();
+    </script>
+</body>
+</html>

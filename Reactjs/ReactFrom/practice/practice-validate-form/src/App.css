@@ -1,0 +1,17 @@
+.container{
+  width: 600px;
+  margin: 0 auto;
+}
+.display{
+ 
+  display:  flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+input {
+  flex-basis: 60%;
+}
+label{
+  font-weight: bold;
+}
