@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.white{
+  color:#fff !important;
+}
+.active{
+  background: #fff;
+  color: #000 !important;
+}

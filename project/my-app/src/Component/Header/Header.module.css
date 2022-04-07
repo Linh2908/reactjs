@@ -1,0 +1,37 @@
+.header_top{
+    flex-grow: 1;
+    align-items: center;
+}
+.header_cart{
+    flex-basis: 9%;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.header_cart:hover {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.header_history{
+    flex-basis: 8%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 12px;
+    border-right: 0.5px solid #ccc;
+}
+.yellow:hover {
+    color:#fed100 !important;
+}
+
+.header_hot{
+    flex-grow: 1;
+}
+.border_right{
+    border-left:0.5px solid #ccc;
+    flex-basis: 8%;
+    text-align: center;
+    /* line-height: 12px; */
+}
+
+.header_address{
+    flex-basis: 14%;
+}

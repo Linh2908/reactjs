@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactJsClass from './component/ReactJsClass';
 
 const App = () => {
   const [valueInput, setValueInput] = useState("");
@@ -10,9 +11,10 @@ const App = () => {
 
   return (
     <div>
-      <input onChange={(e) => (setValueInput(e.target.value))} placeholder='Nhap mot thu gi do...' type={"text"}></input>
+      {/* <input onChange={(e) => (setValueInput(e.target.value))} placeholder='Nhap mot thu gi do...' type={"text"}></input>
 
-      <h1>{result}</h1>
+      <h1>{result}</h1> */}
+      <ReactJsClass/>
     </div>
   );
 }
